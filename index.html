@@ -4,88 +4,119 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WatchCharm</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- #region header-->
-    <header>
-      <a href="./index.html">watchcharm</a>
-      <nav>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">About Us</a></li>
-          <li><a href="">Catalog</a></li>
-          <li><a href="">Sale</a></li>
-          <li><a href="">Reviews</a></li>
-          <li><a href="">Contact Us</a></li>
+    <header class="header">
+      <div class="container header-container">
+        <a class="header-logo" href="./index.html">watchcharm</a>
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li class="header-nev-item">
+              <a class="header-nav-link" href="">Home</a>
+            </li>
+            <li class="header-nev-item">
+              <a class="header-nav-link" href="">About Us</a>
+            </li>
+            <li class="header-nev-item">
+              <a class="header-nav-link" href="">Catalog</a>
+            </li>
+            <li class="header-nev-item">
+              <a class="header-nav-link" href="">Sale</a>
+            </li>
+            <li class="header-nev-item">
+              <a class="header-nav-link" href="">Reviews</a>
+            </li>
+            <li class="header-nev-item">
+              <a class="header-nav-link" href="">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-social-list">
+          <li class="header-social-item">
+            <a class="header-nav-link" target="_blank">
+              <img
+                src="./images/icons/facebook.svg"
+                alt="facebook"
+                width="36"
+                height="36"
+              />
+            </a>
+          </li>
+          <li class="header-social-item">
+            <a class="header-nav-link" ref="" target="_blank">
+              <img
+                src="./images/icons/instagram.svg"
+                alt="instagram"
+                width="36"
+                height="36"
+              />
+            </a>
+          </li>
+          <li class="header-social-item">
+            <a class="header-nav-link" ref="" target="_blank">
+              <img
+                src="./images/icons/youtube.svg"
+                alt="youtube"
+                width="36"
+                height="36"
+              />
+            </a>
+          </li>
         </ul>
-      </nav>
-      <ul>
-        <li>
-          <a href="" target="_blank">
-            <img
-              src="./images/icons/facebook.svg"
-              alt="facebook"
-              width="36"
-              height="36"
-            />
-          </a>
-        </li>
-        <li>
-          <a href="" target="_blank">
-            <img
-              src="./images/icons/instagram.svg"
-              alt="instagram"
-              width="36"
-              height="36"
-            />
-          </a>
-        </li>
-        <li>
-          <a href="" target="_blank">
-            <img
-              src="./images/icons/youtube.svg"
-              alt="youtube"
-              width="36"
-              height="36"
-            />
-          </a>
-        </li>
-      </ul>
+      </div>
     </header>
     <!-- #endregion header-->
     <!-- #region main-->
     <main>
       <!-- #region home-->
       <section class="home">
-        <h1>
-          Welcome to our
-          <span>collection</span>
-          of premium watches
-        </h1>
-        <img
-          src="./images/home/people.png"
-          alt="photo-of-people"
-          width="146"
-          height="60"
-        />
-        <p>
-          Our watches are not just timepieces, but also an expression of your
-          personality and lifestyle. From classic designs to modern ones, we
-          have a watch to suit every taste and occasion.
-        </p>
-        <a href="">scroll down</a>
-        <img
-          src="./images/home/main-photo.jpg"
-          alt="photo-of-watch"
-          width="1150"
-          height="500"
-        />
+        <div class="container home-container">
+          <div class="home-main-wrapper">
+            <div class="home-wrapper=left">
+              <h1 class="home-title">
+                Welcome to our
+                <span class="home-title-collection">collection</span>
+                of premium watches
+              </h1>
+              <p class="home-text">
+                Our watches are not just timepieces, but also an expression of
+                your personality and lifestyle. From classic designs to modern
+                ones, we have a watch to suit every taste and occasion.
+              </p>
+            </div>
+            <div class="home-wrapper-right">
+              <img
+                src="./images/home/people.png"
+                alt="photo-of-people"
+                width="146"
+                height="60"
+              />
+              <a class="home-scroll-down" href="">scroll down</a>
+            </div>
+          </div>
+          <img
+            class="home-photo"
+            src="./images/home/main-photo.jpg"
+            alt="photo-of-watch"
+            width="1150"
+            height="500"
+          />
+        </div>
       </section>
       <!-- #endregion home-->
       <!-- #region about us-->
       <section class="about-us">
-        <h2>About Us</h2>
-        <p>
+        <h2 class="about-us-title">About Us</h2>
+        <p class="about-us-text">
           Welcome to our premium watch collection, where luxury and style meet
           functionality and precision. Our selection of timepieces embodies the
           very best in Swiss craftsmanship and engineering, ensuring that you'll
@@ -94,7 +125,7 @@
           timekeeping device - it's a statement piece that reflects your
           personality and style. So why settle for anything less than the best?
         </p>
-        <button class="" type="button">View catalog</button>
+        <button class="about-us-btn" type="button">View catalog</button>
         <img
           src="./images/about-us/watch-photo.jpg"
           alt="photo-of-watch"
@@ -108,7 +139,7 @@
 
       <!-- #region catalog-->
       <section class="catalog">
-        <h2>Catalog</h2>
+        <h2 class="catalog-title">Catalog</h2>
         <ul>
           <li>
             <img
@@ -117,8 +148,10 @@
               width="304"
               height="312"
             />
-            <h3>Garmin Fenix 7X Pro Sapphire Solar</h3>
-            <p>€500</p>
+            <h3 class="catalog-item-name">
+              Garmin Fenix 7X Pro Sapphire Solar
+            </h3>
+            <p class="catalog-item-price">€500</p>
           </li>
           <li>
             <img
@@ -127,8 +160,8 @@
               width="304"
               height="312"
             />
-            <h3>Garmin Marq Athlete</h3>
-            <p>€450</p>
+            <h3 class="catalog-item-name">Garmin Marq Athlete</h3>
+            <p class="catalog-item-price">€450</p>
           </li>
           <li>
             <img
@@ -137,8 +170,8 @@
               width="304"
               height="312"
             />
-            <h3>Garmin Descent MK1</h3>
-            <p>€680</p>
+            <h3 class="catalog-item-name">Garmin Descent MK1</h3>
+            <p class="catalog-item-price">€680</p>
           </li>
           <li>
             <img
@@ -148,7 +181,7 @@
               height="312"
             />
             <h3>Garmin D2 Delta PX</h3>
-            <p>€380</p>
+            <p class="catalog-item-price">€380</p>
           </li>
           <li>
             <img
@@ -157,8 +190,8 @@
               width="304"
               height="312"
             />
-            <h3>Garmin Fenix 6 Pro Solar</h3>
-            <p>€400</p>
+            <h3 class="catalog-item-name">Garmin Fenix 6 Pro Solar</h3>
+            <p class="catalog-item-price">€400</p>
           </li>
           <li>
             <img
@@ -167,15 +200,18 @@
               width="304"
               height="312"
             />
-            <h3>Tube Watch S42 Date Steel With Black Case</h3>
-            <p>€395</p>
+            <h3 class="catalog-item-name">
+              Tube Watch S42 Date Steel With Black Case
+            </h3>
+            <p class="catalog-item-price">€395</p>
           </li>
         </ul>
       </section>
       <!-- #endregion catalog-->
       <!-- #region sale-->
+
       <section class="sale">
-        <h2>Sale</h2>
+        <h2 class="sale-title">Sale</h2>
         <ul>
           <li>
             <img
@@ -240,6 +276,54 @@
         </ul>
       </section>
       <!-- #endregion sale-->
+      <!-- #region reviews-->
+      <section class="reviews">
+        <div class="container">
+          <h2 class="reviews-title">Reviews</h2>
+          <ul class="reviews-list">
+            <li class="reviews-item">
+              <img
+                class="reviews-photo"
+                src="./images/teamelips1.png"
+                alt="man"
+              />
+              <h3 class="reviews-name">John Wax</h3>
+              <p class="reviews-text">
+                Buying a watch from was the best choice for me. The design is
+                perfectly combined with high quality materials. The strap fits
+                nicely on the hand, and the mechanism works flawlessly.
+              </p>
+            </li>
+            <li class="reviews-item">
+              <img
+                class="reviews-photo"
+                src="./images/teamelips2.png"
+                alt="girl1"
+              />
+              <h3 class="reviews-name">Victoria Romashenko</h3>
+              <p class="reviews-text">
+                Can't take my eyes off my watch from. Every time I put it on, it
+                is admired by those around me. The build quality and attention
+                to detail make it a real gem among my accessories.
+              </p>
+            </li>
+            <li class="reviews-item">
+              <img
+                class="reviews-photo"
+                src="./images/teamelips3.png"
+                alt="girl2"
+              />
+              <h3 class="reviews-name">Anastasia Trachuk</h3>
+              <p class="reviews-text">
+                My watch from is a real masterpiece. Every detail impresses with
+                the high quality of execution. Special features like [specify
+                features] make it an indispensable companion in my daily life.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- #endregion reviews-->
     </main>
     <footer></footer>
   </body>
